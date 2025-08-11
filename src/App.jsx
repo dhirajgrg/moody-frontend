@@ -11,7 +11,8 @@ const App = () => {
 		if (!expression) return
 
 		axios
-			.get(`http://localhost:3000/songs/${expression}`)
+			.get(`${import.meta.env.VITE_API_BASE_URL}/songs/${expression}`)
+
 			.then((res) => {
 				setSong(res.data.song)
 			})
