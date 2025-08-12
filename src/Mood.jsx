@@ -66,8 +66,9 @@ export default function MoodyDetector({ expression, setExpression }) {
 
 	return (
 		<div className="container mx-auto flex flex-col items-center py-4">
-			<div>
+			<div className="shadow-md drop-shadow-md ">
 				<video
+					
 					ref={videoRef}
 					autoPlay
 					muted
@@ -79,7 +80,7 @@ export default function MoodyDetector({ expression, setExpression }) {
 			<div className="flex items-center flex-col">
 				<button
 					onClick={handleMoodSubmit}
-					className="bg-blue-700 py-2 px-6 font-semibold text-white rounded-full mt-4">
+					className="bg-violet-700  py-2 px-6 font-semibold text-white rounded-full mt-4">
 					Detect Mood
 				</button>
 				<div>

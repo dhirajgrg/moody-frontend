@@ -23,8 +23,10 @@ const App = () => {
 	}, [expression])
 
 	return (
-		<div className="h-full flex flex-col items-center justify-center bg-zinc-200 pt-10 ">
-			<h1 className="text-4xl font-bold mb-4  ">moody player</h1>
+		<div className="min-h-screen w-full overflow-x-hidden flex flex-col items-center bg-zinc-200 pt-10 ">
+			<h1 className="text-3xl  md:text-4xl font-bold mb-4 text-violet-700  ">
+				moody player
+			</h1>
 			<MoodyDetector
 				expression={expression}
 				setExpression={setExpression}
